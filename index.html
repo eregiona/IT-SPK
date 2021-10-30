@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- название сайта -->
+    <title>Document</title>
+    <!-- конец названия сайта -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/burger-anim/animation.js" defer="defer"></script>
+</head>
+<!-- Начало body -->
+<body>
+    <!-- Начало header -->
+    
+    <!-- <header class="header container"> -->
+    <header class="header-not-fixed">
+
+        <!-- logo -->
+        <div class="logo">
+            <img class="logo__img" src="img/Group.svg" alt="Логоптип">
+        </div>
+        <!-- end logo -->
+
+        <!-- start tools -->
+        <ul class="tools">
+            <a href="http://yandex.ru" class="tools__link">О нас</a>
+            <a href="#" class="tools__link">Услуги</a>
+            <a href="#" class="tools__link">Цены</a>
+        </ul>
+        <!-- end tools -->
+
+        <!-- start phones -->
+        <div class="phones">
+            <p class="phones__number"><span class="phones__name">lifecell</span> &nbsp;+380 93 541 20 92 <br> <span class="phones__name">Vodafone</span> &nbsp;+380 99 311 29 79</p>
+        </div>
+<!-- !!! !!! Элементы ниже скрыты до разрешения w:768 -->
+    <!-- БУРГЕР ВЫНЕСЕН В ОТДЕЛЬНЫЙ div ЭТО ПРАВИЛЬНО -->
+        <!-- ЗА СЧЕТ ЭТОГО СИТИЛИ ДЛЯ МЕНЮ НЕ ИДУТ ПО ОДНОМУ МЕСТУ -->
+        <div class="burger">
+            <span></span>    
+        </div>
+     <!-- КОНЕЦ БУРГЕРА-->
+        <!-- РАЗВЕРТЫВАЕМ МЕНЮ ПОСЛЕ НАЖАТИЯ НА БУРГЕР -->
+        <div class="menu">
+            <div class="burger__container">
+                <div class="burger_logo">
+                    <img width="180px" height="60px" src="img/logo-burger.svg" alt="Логотип">
+                </div>
+                <div class="burger_phones">
+                    <p class="burger-phones__number"> +380 93 541 20 92 &nbsp; <span class="burger-phones__name">lifecell</span> <br> <br> +380 99 311 29 79  &nbsp; <span class="burger-phones__name">Vodafone</span></p>
+                </div>
+                <div class="burger_tools">
+                    <li><a href="http://vk.com/olegs1mple" class="burger__link">О нас</a></li>
+                    <li><a href="##" class="burger__link">Услуги</a></li>
+                    <li><a href="##" class="burger__link">Цены</a></li>
+                </div>
+                <div>
+                    <a href="##" class="button">Отправить заявку<img class="button_vector" src="img/arrow.svg" alt="Стрелка"></a>
+                </div>
+            </div>
+        </div>
+        <!-- КОНЕЦ БЛОКА МЕНЮ -->
+<!-- !!! !!! Конец скрытых элементов до w:768px -->
+    </header>
+    <!-- Конец header -->
+    <!-- <main> -->
+    <!-- Сделаем секцию с background -->
+        <!-- <section class="container-two"></section>
+        <section class="container-two"></section> -->
+    <!-- конец секции с background -->
+
+    <!-- </main> -->
+
+    <main>
+        <section class="about">
+            <div class="card-top">
+                <h1 class="card-title">IT-Аутсорсинг компаниям в Киеве</h1>
+            </div>
+            <div class="card-middle">
+                <p class="card-description">Обслуживание компьютеров в Киеве</p>
+            </div>
+            <div class="card-bottom">
+                <p class="card-price">От <span class="card-price_special">315грн/</span>мес</p>
+                <p class="card-place">за 1 рабочее место</p>
+                <a href="#" class="button">Отправить заявку <img class="button_vector" src="img/arrow.svg" alt="Стрелка"></a>
+            </div>
+        </section>
+        <!-- Место для других блоков -->
+        <div class="test">
+            
+        </div>
+        
+    </main>
+
+</body>
+</html>

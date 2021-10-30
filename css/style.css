@@ -1,0 +1,427 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         /* url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), Super Modern Browsers */
+         /* url('../fonts/montserrat-v18-latin-regular.woff') format('woff'), Modern Browsers */
+         url('../fonts/Montserrat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v18-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         /* url('../fonts/montserrat-v18-latin-700.woff2') format('woff2'), Super Modern Browsers */
+         /* url('../fonts/montserrat-v18-latin-700.woff') format('woff'), Modern Browsers */
+         url('../fonts/Montserrat-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v18-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+/* montserrat-900 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v18-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v18-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         /* url('../fonts/montserrat-v18-latin-900.woff2') format('woff2'), Super Modern Browsers */
+         /* url('../fonts/montserrat-v18-latin-900.woff') format('woff'), Modern Browsers */
+         url('../fonts/Montserrat-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v18-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    height: auto;
+    width: 100vw;
+}
+
+/* Параметры меню до нажатия на кнопку */
+.menu{
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 84px; */
+    background-color: #00244E;
+    position: fixed;
+    left: -100vw;
+    /* Без отскока transition: left 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+       Ниже с отскоком */
+    transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+/* Положение при анимации */
+.menu.animate {
+    left:0px;
+}
+/* Контейнер страницы */
+/* .container {
+    max-width: auto;
+    margin:auto;
+} */
+
+/* Заголовок */
+/* .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #00244E;
+    padding-bottom: 10px;
+    height: 84px;
+    z-index: 1;
+} */
+.header-not-fixed {
+    position: absolute;
+    width: 100vw;
+    /* margin:auto; */
+    /* margin-top: 0px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #001E42; */
+    background-color: transparent;
+    /* padding-bottom: 10px; */
+    /* height: 84px; */
+    z-index: 9;
+}
+.fixed {
+    position: fixed;
+    background-color: #001E42;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+/* Поле логотипа сайта */
+.logo {
+    margin-top: 37px;
+    margin-left: 177px;
+}
+.burger_logo{
+    /* маргин как у бургера */
+    margin-top: 37px; 
+    /* margin-right: 20px; */
+}
+/* Логотип */
+.logo__img {
+    width: 126px;
+    height: 42px;
+}
+
+/* О нас/цены/услуги */
+.tools {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/* Стиль ссылки для tools */
+.tools__link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    
+}
+
+/* Телефоны и текст */
+.phones {
+    margin-right: 177px;
+    margin-top: 37px;
+    color: #FFFFFF;
+    text-align: right;
+}
+.phones__number {
+    width:219px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+}
+.phones__name {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+/* кнопка */
+.button {
+    z-index: -1;
+    width: 219px;
+    height: 22px;
+    text-align: center;
+    cursor: pointer;
+    padding: 14px 12px 14px 22px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #002047;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    background: #00FEFF;
+}
+.button_vector {
+    height: 11px;
+    margin-right: 11.72px;
+}
+
+/* При разрешении более 768px отключаем поля burger 
+и menu ИНАЧЕ СЪЕДЕТ HEADER*/
+@media (min-width:768px) {
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: none;
+    }
+}
+
+/* При разрешении до 768px*/
+@media (max-width:767px) {
+    /* отключаем поле о нас/услуги/цены  */
+    .menu{
+        z-index: 2;
+    }
+    .tools {
+        display: none;
+    }
+    /* отключаем поле с телефонами */
+    .phones {
+        display: none;
+    }
+    /* ПОМЕЩАЙ ДО БУРГЕРА СВОИ СТИЛИ ДЛЯ АДАПТИВА */
+    /* .container-two{
+        background-position-x: -45vw;
+    } */
+
+
+
+    /* НИЖЕ ЭТОГО КОММЕНТАРИЯ НИЧЕГО НЕ ДОБАВЛЯЙ */
+    /* БУРГЕРНЫЕ СТИЛИ */
+    .burger{
+        display: block;
+        margin-right: 30px;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 37px;
+        z-index: 3;
+    }
+        .burger span, .burger span:before, .burger span:after{
+            width: 100%;
+            position: absolute;
+            height: 5px;
+            background: rgb(255, 255, 255);
+            display: block;
+            transition: .3s;
+            border-radius: 5px;
+        }
+        .burger span:before{
+            content: "";
+            top: -18px;
+            transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .burger span{
+            top: 18px;
+        }
+        .burger span:after{
+            content: "";
+            bottom: -18px;
+            transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .burger span.active:before{
+            /* width: 25px; */
+            background: gray;
+            content: "";
+            top: 0px;
+            transform: rotate(45deg);
+            transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .burger span.active:after{
+            /* width: 25px; */
+            background: gray;
+            content: "";
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .burger span.active{
+            margin-left: 15px;
+
+            width: 50px;
+            background: rgba(255, 1, 1, 0); 
+
+        }
+        /* сам блок бургера */
+        .burger__container {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        /* блок с номерами телефонов */
+        .burger_phones {
+            width: auto;
+            min-width: 238px;
+            height: 70px;
+            align-items: center;
+        }
+        /* названия номеров телефонов, которые выделены span */
+        .burger-phones__name {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #001E42;
+        }
+        /* сами номера телефонов */
+        .burger-phones__number {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #001E42;
+            width: auto;
+        }
+        /* блок с ссылками о нас, услуги, цены */
+        .burger_tools {
+            width: 238px;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+        /* ссылочки на страницу о нас, услуги, цены */
+        .burger__link {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #001E42;
+        }
+        /* КОНЕЦ БУРГЕРНЫХ СТИЛЕЙ */
+        /* ЗДЕСЬ В МЕДИА НЕ ПИСАТЬ */
+        /* ЕСЛИ НУЖНО ВОТКНУТЬ ЧТО-ТО В МЕДИА ВСТАВЛЯЙ ДО БУРГЕРА */
+}
+
+.test {
+    width: auto;
+    height: 9000px;
+}
+.about {
+    width: 1440px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-image: url('../img/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* пэддинг нужен всем main_section */
+    /* padding-top: 60px; */
+}
+.card-top {
+    position: absolute;
+    width: 568px;
+    height: 110px;
+    left: 175px;
+    top: 155px;
+}
+.card-middle {
+    position: absolute;
+    width: 389px;
+    height: 21px;
+    left: 175px;
+    top: 322px;
+}
+
+.card-bottom {
+    position: absolute;
+    width: 225px;
+    height: 72px;
+    left: 176px;
+    top: 343px;
+}
+.card-title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 100%;
+    color: #00FEFF;
+    margin-bottom: 57px;
+}
+.card-description {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 103.32%;
+    color: #00FEFF;
+}
+.card-price {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.card-price_special {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.card-place {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 600px) {
+    .card-title {
+        font-size: calc(50px - 5vw);
+    }
+    /* .card-top{
+        margin-bottom: 40px;
+    } */
+    .button {
+        width: auto;
+    }
+}
+@media (max-width:767px) {
+    .about{
+        background-position-x: -20vw;
+    }
+    /* .card-top {
+        margin-bottom: 40px;
+    } */
+}
+/* Конец главного контейнера */
+
+
+
