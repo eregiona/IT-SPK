@@ -1,0 +1,27 @@
+.effective {
+    width: 1090px;
+    margin-left: 177px;
+    margin-right: 175px;
+}
+.effective-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #001E42;
+    margin-bottom: 31px;
+    }
+.effective-container {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #252D37;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    
+}
+.effective-container_description {
+    width: 529px;
+}
+
+    

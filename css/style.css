@@ -215,7 +215,11 @@ body {
 
 /* Начало блока "О нас" */
 .about {
+<<<<<<< Updated upstream
     width: calc(100vw - 352px);
+=======
+    width: 1090px;
+>>>>>>> Stashed changes
     margin-top: 97px;
     background-color: #FFFFFF;
     margin-left: 177px;
