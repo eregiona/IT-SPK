@@ -165,6 +165,13 @@ body {
     margin-left: 175px;
 
 }
+.button-main {
+    display: inline-block;
+    width: 253px;
+    height: 50px;
+    margin-left: 175px;
+    margin-top: 28px;
+}
 .card-title {
     font-weight: 900;
     font-size: 50px;
@@ -201,13 +208,19 @@ body {
 
 /* Начало блока "О нас" */
 .about {
-    width: 100vw;
+    width: calc(100vw - 352px);
     margin-top: 97px;
     background-color: #FFFFFF;
     margin-left: 177px;
     margin-right: 175px;
     display: flex;
     justify-content: space-between;
+}
+.about_ONas {
+    display: inline-block;
+    width: 186px;
+    height: 58px;
+    margin-top: 0px;
 }
 .tools-title {
     font-weight: bold;
@@ -218,38 +231,40 @@ body {
     margin-right: 80px;
 }
 .about-description {
+    display: inline-block;
+    max-width: 821px;
+    min-height: 139px;
+}
+.about-description-text {
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
-    color: #252D37
+    color: #252D37;
+    text-align: justify;
 }
 /* Конец блока "О нас"*/
 
 /* Начало блока "Услуги" */
 .services {
-
+    display: inline-block;
+    width: calc(100vw - 352px);
     margin: 75px 175px 73px 177px;
 }
 .services-blocks {
-    min-width: 1090px;
+    max-width: 1088px;
     min-height: 222px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: space-between;
 }
 .services-block {
     width: 270px;
     height: 62px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-right: 90px;
     margin-top: 60px;
 }
-.audit {
-    width: 300px;
-    margin-right: 62px;
-}
+
 .services-descriprion {
     font-weight: bold;
     font-size: 18px;
@@ -265,24 +280,23 @@ body {
         margin-right: 17px;
         margin-top: 46px;
     }
-    .about-description {
+    .about-description-text {
         margin-top: 20px;
         text-align: left;
         font-size: 16px;
         /* margin-left: 5px;
         margin-right: 17px; */
     }
+    .services {
+        width: 100vw;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+
 }
-/* Конец блока "Услуги"*/
-/* @media (max-width: 600px) {
-    .card-title {
-        font-size: calc(50px - 5vw);
+@media (max-width:1432px) {
+    .services-blocks {
+        justify-content: center;
     }
-    .button {
-        width: auto;
-    }
-} */
-/* Конец главного контейнера */
-
-
-
+}
