@@ -141,4 +141,7 @@ color: #FFFFFF;
     .footer-neon-text {
         text-align: left;
     }
+    .str_clear {
+        height: 18px;
+    }
 }
