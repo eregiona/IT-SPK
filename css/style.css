@@ -4,10 +4,7 @@ body {
     width: 1440px;
     margin: auto;
 }
-.container {
-    position: relative;
-    max-width: 1090px;
-}
+
 
 /* Начало хедера */
 .header-not-fixed {
@@ -125,16 +122,17 @@ body {
 /* Начало Первого контейнера */
 .description {
     width: 1440px;
-    height: 560px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/background.jpeg');
+    /* background-image: url('../img/background.jpeg'); */
+    background: linear-gradient(0deg, rgba(1, 53, 113, 0.25), rgba(1, 53, 113, 0.25)), url(../img/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
 }
-.description::before {
+/* .description::before {
     content:'';
     position: absolute;
     left: 0;
@@ -144,28 +142,28 @@ body {
     height: 100%;
     width: 100%;
     background: linear-gradient(0deg, rgba(1, 53, 113, 0.25), rgba(1, 53, 113, 0.25));
-}
+} */
 .card-top {
-    position: absolute;
+    display: inline-block;
     width: 568px;
     height: 110px;
-    left: 175px;
-    top: 155px;
+    margin-top: 155px;
+    margin-left: 175px;
 }
 .card-middle {
-    position: absolute;
+    display: inline-block;
     width: 389px;
     height: 21px;
-    left: 175px;
-    top: 322px;
+    margin-top: 57px;
+    margin-left: 175px;
 }
 
 .card-bottom {
-    position: absolute;
-    width: 225px;
-    height: 72px;
-    left: 176px;
-    top: 343px;
+    display: inline-block;
+    width: 229px;
+    height: 69px;
+    margin-left: 175px;
+
 }
 .card-title {
     font-weight: 900;
@@ -203,12 +201,12 @@ body {
 
 /* Начало блока "О нас" */
 .about {
+    width: 100vw;
     margin-top: 97px;
     background-color: #FFFFFF;
     margin-left: 177px;
     margin-right: 175px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .tools-title {
@@ -222,13 +220,14 @@ body {
 .about-description {
     font-weight: normal;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 140%;
     color: #252D37
 }
 /* Конец блока "О нас"*/
 
 /* Начало блока "Услуги" */
 .services {
+
     margin: 75px 175px 73px 177px;
 }
 .services-blocks {
@@ -258,15 +257,31 @@ body {
     color: #001E42;
     margin-left: 30px;
 }
+@media (max-width: 875px) {
+    .about {
+        width: calc(100vw - 34px);
+        flex-wrap: wrap;
+        margin-left: 17px;
+        margin-right: 17px;
+        margin-top: 46px;
+    }
+    .about-description {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 16px;
+        /* margin-left: 5px;
+        margin-right: 17px; */
+    }
+}
 /* Конец блока "Услуги"*/
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .card-title {
         font-size: calc(50px - 5vw);
     }
     .button {
         width: auto;
     }
-}
+} */
 /* Конец главного контейнера */
 
 
