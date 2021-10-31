@@ -1,15 +1,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    width: 1440px;
+    width: 100vw;
     margin: auto;
+    overflow-x: hidden;
 }
 
 
 /* Начало хедера */
 .header-not-fixed {
     position: absolute;
-
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,8 +20,7 @@ body {
 .fixed {
     position: fixed;
     background-color: #001E42;
-    width: 1440px;
-    
+    width: 100vw;
     top: 0;
     z-index: 2;
   }
@@ -120,8 +120,15 @@ body {
 }
 
 /* Начало Первого контейнера */
+.main-content {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 .description {
     width: 1440px;
+    /* width: 100vw; */
+    /* background-position-x:  calc(700px - 100vw); */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -129,8 +136,8 @@ body {
     background: linear-gradient(0deg, rgba(1, 53, 113, 0.25), rgba(1, 53, 113, 0.25)), url(../img/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    right: calc(1440px - 100vw);
     position: relative;
-
 }
 /* .description::before {
     content:'';
@@ -292,6 +299,19 @@ body {
         margin-left: 17px;
         margin-right: 17px;
     }
+    /* HUY */
+    .card-top {
+        display: none;
+    }
+    .card-bottom{
+        display: none;
+    }
+    .card-middle {
+        display: none;
+    }
+    .button-main {
+        display: none;
+    }
 
 
 }
@@ -300,3 +320,4 @@ body {
         justify-content: center;
     }
 }
+
