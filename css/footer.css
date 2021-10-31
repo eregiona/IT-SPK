@@ -73,12 +73,14 @@
     margin-right: 175px;
 }
 /* Шрифт сервисов */
+/* hde */
 .footer-neon-text {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: right;
     color: #00FEFF;
+
 }
 
 /* поле Org */
