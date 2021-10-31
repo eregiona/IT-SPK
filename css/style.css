@@ -299,19 +299,8 @@ body {
         margin-left: 17px;
         margin-right: 17px;
     }
-    /* HUY */
-    .card-top {
-        display: none;
-    }
-    .card-bottom{
-        display: none;
-    }
-    .card-middle {
-        display: none;
-    }
-    .button-main {
-        display: none;
-    }
+
+
 
 
 }
