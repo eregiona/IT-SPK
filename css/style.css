@@ -284,7 +284,7 @@ body {
         width: calc(100vw - 34px);
         flex-wrap: wrap;
         margin-left: 17px;
-        margin-right: 17px;
+        margin-right: 13px;
         margin-top: 46px;
     }
     .about-description-text {
@@ -296,20 +296,20 @@ body {
     }
     .services {
         width: 100vw;
-        margin-left: 17px;
+        margin-left: 13px;
         margin-right: 17px;
     }
     .card-top {
-        margin-left: calc(17px + 1440px - 100vw);
+        margin-left: calc(13px + 1440px - 100vw);
     }
     .card-bottom {
-        margin-left: calc(17px + 1440px - 100vw);
+        margin-left: calc(13px + 1440px - 100vw);
     }
     .card-middle {
-        margin-left: calc(17px + 1440px - 100vw);
+        margin-left: calc(13px + 1440px - 100vw);
     }
     .button-main {
-        margin-left: calc(17px + 1440px - 100vw);
+        margin-left: calc(13px + 1440px - 100vw);
     }
 
 
