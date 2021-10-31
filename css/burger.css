@@ -1,0 +1,141 @@
+/* Параметры меню до нажатия на кнопку */
+.menu{
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 84px; */
+    background-color: #00244E;
+    position: fixed;
+    left: -100vw;
+    /* Без отскока transition: left 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+       Ниже с отскоком */
+    transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/* Положение при анимации */
+.menu.animate {
+    left:0px;
+}
+.burger_logo{
+    /* маргин как у бургера */
+    margin-top: 37px; 
+}
+/* При разрешении до 768px*/
+@media (max-width:875px) {
+    /* БУРГЕРНЫЕ СТИЛИ */
+    .burger{
+        display: block;
+        margin-right: 30px;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 37px;
+        z-index: 3;
+    }
+        .burger span, .burger span:before, .burger span:after{
+            width: 100%;
+            position: absolute;
+            height: 5px;
+            background: rgb(255, 255, 255);
+            display: block;
+            transition: .3s;
+            border-radius: 5px;
+        }
+        .burger span:before{
+            content: "";
+            top: -18px;
+            transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .burger span{
+            top: 18px;
+        }
+        .burger span:after{
+            content: "";
+            bottom: -18px;
+            transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .burger span.active:before{
+            /* width: 25px; */
+            background: gray;
+            content: "";
+            top: 0px;
+            transform: rotate(45deg);
+            transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .burger span.active:after{
+            /* width: 25px; */
+            background: gray;
+            content: "";
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .burger span.active{
+            margin-left: 15px;
+
+            width: 50px;
+            background: rgba(255, 1, 1, 0); 
+
+        }
+        /* сам блок бургера */
+        .burger__container {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        /* блок с номерами телефонов */
+        .burger_phones {
+            width: auto;
+            min-width: 238px;
+            height: 70px;
+            align-items: center;
+        }
+        /* названия номеров телефонов, которые выделены span */
+        .burger-phones__name {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #001E42;
+        }
+        /* сами номера телефонов */
+        .burger-phones__number {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #001E42;
+            width: auto;
+        }
+        /* блок с ссылками о нас, услуги, цены */
+        .burger_tools {
+            width: 238px;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+        /* ссылочки на страницу о нас, услуги, цены */
+        .burger__link {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #001E42;
+        }
+}
+/* При разрешении более 768px отключаем поля burger */
+@media (min-width:876px) {
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: none;
+    }
+}
