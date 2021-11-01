@@ -1,0 +1,118 @@
+.price_container {
+    max-width: 1090px;
+    margin-left: 175px;
+    margin-right: 177px;
+    margin-bottom: 90px;
+}
+.price-subcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 321px;
+}
+.price-description {
+    width: 529px;
+    max-height: 236px;
+    margin-top: 34px;
+}
+.price-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #252D37;
+}
+.price-text_special {
+    font-weight: bold;
+}
+.price-card {
+    width: 259px;
+    height: 321px;
+    border: 2px solid #001E42;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.price-card_style-1 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #001E42;
+}
+.price-card_style-2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #001E42;
+}
+.price-card_style-3 {
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 115%;
+    color: #001E42
+}
+.price-card_style-4 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #001E42;
+}
+.download {
+    width: 399px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.download-container_1 {
+    width: 157px;
+    height: 50px;
+    border: 2px solid #001E42;
+    box-sizing: border-box;
+    background: #E5E5E5;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+.download-container_2 {
+    background: #E5E5E5;
+    cursor: pointer;
+    border: 2px solid #001E42;
+    box-sizing: border-box;
+    width: 228px;
+    height: 50px;
+
+}
+.download-IT {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #001E42;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    display: inline-block;
+    border: 2px solid #001E42;
+    box-sizing: border-box;
+    
+    
+    
+}
+.download-mounting {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #001E42;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    
+    cursor: pointer;
+    border: 2px solid #001E42;
+    box-sizing: border-box;
+}
