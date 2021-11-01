@@ -21,7 +21,8 @@
 }
 
 .effective-container_description {
-    width: 529px;
+    /* width: 529px; */
+    width: auto;
 }
 @media (max-width:1070px) {
     /* .effective {

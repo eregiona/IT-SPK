@@ -76,3 +76,95 @@
 .text-3 {
     margin-left: 35px;
 }
+@media (max-width:1260px) {
+    @media (min-width:876px) {
+        .purpose-description {
+            flex-wrap: wrap;
+        }
+        .purpose {
+            /* margin-left: 13px;*/
+            margin-top: 63px;
+            justify-content: left;
+        }
+        .purpose-svg {
+            margin-left: 0px;
+        }
+        .purpose-text {
+            margin-left: 0px;
+        }
+        .p-style {
+            width: calc(100vw - 352px);
+            font-size: 22px;
+            line-height: 29px;
+            line-height: 130%;
+            text-align: Left;
+            vertical-align: Top;
+        }
+        .effective-title-sec {
+            margin-top: 46px;
+            width: calc(100vw - 352px);
+            font-size: 22px;
+            line-height:  27px;
+            line-height: 100%;
+            text-align: Left;
+            vertical-align: Top;
+            margin-bottom: 50px;
+        }
+        .enumeration {
+            width: calc(100vw - 352px);
+            flex-direction: column;
+            height: 344px;
+            align-items: center;
+    
+        }
+        .enumeration-container {
+            width: 328px;
+            /* margin */
+        }
+    }
+}
+@media (max-width:875px) {
+    .purpose-description {
+        flex-wrap: wrap;
+    }
+    .purpose {
+        margin-left: 13px;
+        margin-top: 63px;
+        justify-content: left;
+    }
+    .purpose-svg {
+        margin-left: 0px;
+    }
+    .purpose-text {
+        margin-left: 0px;
+    }
+    .p-style {
+        width: calc(100vw - 26px);
+        font-size: 22px;
+        line-height: 29px;
+        line-height: 130%;
+        text-align: Left;
+        vertical-align: Top;
+    }
+    .effective-title-sec {
+        margin-top: 46px;
+        width: calc(100vw - 26px);
+        font-size: 22px;
+        line-height:  27px;
+        line-height: 100%;
+        text-align: Left;
+        vertical-align: Top;
+        margin-bottom: 50px;
+    }
+    .enumeration {
+        width: calc(100vw - 26px);
+        flex-direction: column;
+        height: 344px;
+        align-items: center;
+
+    }
+    .enumeration-container {
+        width: 328px;
+        /* margin */
+    }
+}
