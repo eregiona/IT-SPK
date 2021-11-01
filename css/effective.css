@@ -1,5 +1,5 @@
 .effective {
-    width: 1090px;
+    max-width: 1090px;
     margin-left: 177px;
     margin-right: 175px;
 }
@@ -22,6 +22,11 @@
 }
 .effective-container_description {
     width: 529px;
+}
+@media (max-width:1070) {
+    .effective-container {
+        flex-wrap: wrap;
+    }
 }
 
     

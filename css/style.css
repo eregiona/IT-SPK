@@ -47,6 +47,7 @@ body {
     max-width: 1440px;
     width: 100vw;
     height: 100vh;
+    max-height: 560px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, rgba(1, 53, 113, 0.25), rgba(1, 53, 113, 0.25)), url(../img/background.jpeg);
@@ -251,6 +252,9 @@ body {
     }
     .button-main {
         margin-left: 13px;
+    }
+    .description {
+        max-height: 100vh;
     }
 
     /* Текст под кноной отображается только при определенной */
