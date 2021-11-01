@@ -17,15 +17,30 @@
     color: #252D37;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 42px;
-    
+    margin-bottom: 42px;   
 }
+
 .effective-container_description {
     width: 529px;
 }
-@media (max-width:1070) {
+@media (max-width:1070px) {
+    .effective {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
     .effective-container {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+        vertical-align: top;
         flex-wrap: wrap;
+    }
+    .effective-title {
+        margin-top: 0px;
+        margin-bottom: 38px;
+    }
+    .effective-mobile {
+        margin-bottom: 22.4px;
     }
 }
 
