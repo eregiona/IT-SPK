@@ -1,0 +1,91 @@
+/* Начало хедера */
+.header-not-fixed {
+    position: absolute;
+    width: 100vw;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 1;
+}
+.fixed {
+    position: fixed;
+    background-color: #001E42;
+    width: 100vw;
+    max-width: 1440px;
+    top: 0;
+    z-index: 2;
+}
+/* Поле логотипа сайта */
+.logo {
+    margin-top: 37px;
+    margin-left: 177px;
+}
+
+/* Логотип */
+.logo__img {
+    width: 126px;
+    height: 42px;
+}
+/* О нас/цены/услуги */
+.tools {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 266px;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 276px;
+}
+
+/* Стиль ссылки для tools */
+.tools__link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}/* Телефоны и текст */
+.phones {
+    margin-right: 177px;
+    margin-top: 37px;
+    margin-left: 170px;
+    color: #FFFFFF;
+    text-align: right;
+}
+.phones__number {
+    width:219px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+}
+.phones__name {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+@media (max-width:1439px) {
+    .tools {
+        margin-right: 0px;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+    .phones {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 875px) {
+    .logo {
+        margin-left: 14px;
+        margin-top: 38px;
+    }
+    .tools {
+        display: none;
+    }
+    /* отключаем поле с телефонами */
+    .phones {
+        display: none;
+    }
+}
