@@ -183,7 +183,7 @@
         margin-bottom: 16px;
     }
 }
-@media (max-width:426px) {
+@media (max-width: 716px) {
     .download {
         display: none;
     }
@@ -197,6 +197,7 @@
         flex-wrap: nowrap;
         min-height: 590px;
         width: calc(100vw - 26px);
+        align-items: center;
     }
     .price-card {
         width: 345px;
@@ -215,6 +216,14 @@
         width: calc(100vw - 30px);
     }
     .price-text_container {
-        min-height: 250px;
+        min-height: 300px;
+    }
+    .price-title {
+        width: calc(100vw - 10px);
+    }
+}
+@media (max-width: 320px) {
+    .price-card {
+        width: 300px;
     }
 }
