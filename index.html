@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/effective.css">
     <link rel="stylesheet" href="css/purpose.css">
     <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/search-form.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/burger-anim/animation.js" defer="defer"></script>
@@ -223,6 +224,36 @@
             </div>
         </div>
         <!-- Конец контейнера про цены -->
+
+        <!-- Начало блока формы -->
+        <div class="search-form_container">
+            <div class="search-form_text-container">
+                <div class="search-form-text">
+                    <p>Оставьте заявку на обслуживание компьютеров и мы свяжемся с вами</p>
+                </div>
+            </div>
+            <div class="search-forms">
+                <div class="form">
+                    <form action="#" class="name">
+                        <input class="search-input" type="text" placeholder="Имя">
+                    </form>
+                    <form action="#" class="name">
+                        <input class="search-input" type="tel" placeholder="Номер телефона*">
+                    </form>
+                    <form action="#" class="name">
+                        <input class="search-input" type="email" placeholder="E-mail">
+                    </form>
+                    <form action="#" class="">
+                        <textarea class="message" style="height:100px;" placeholder="Сообщение"></textarea>
+
+                        <!-- <input class="search-input message" type="text" placeholder="Сообщение"> -->
+                    </form>
+                     <p class="agree"><input  type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>Даю согласие на обработку персональных данных</p>
+                    <button class="form-button">Отправить <img class="form-img" src="img/Vector 1.svg" alt="Стрелка"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Конец блока формы -->
 
     </main>
     <!-- Конец main -->

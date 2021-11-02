@@ -1,0 +1,108 @@
+.search-form_container {
+    /* max-width: 1090px;
+    width: calc(100vw - 352px); */
+    background-image: url(../img/form.jpg);
+    background-size: cover;
+    left: calc(50% - 1440px/2);
+    /* height: 430px; */
+    /* margin-left: 175px;
+    margin-right: 177px; */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.search-form_text-container {
+    width: calc(100vw - 895px);
+    margin-left: 175px;
+}
+.search-form-text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+    width: 374px;
+    height: 172px;
+    margin-left: 58px;
+    margin-top: 102px;
+    margin-bottom: 156px;
+    margin-right: 113px;
+}
+.search-forms {
+    width: 545px;
+}
+.form  {
+    width: 343px;
+    height: 375px;
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-input {
+    width: 325px;
+    height: 42px;
+    background: #ECECEC;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    border: none;
+    color: #001E42;
+    outline: none;
+    padding-left: 20px;
+}
+::-webkit-input-placeholder {
+    color: #001E42;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    font-family: "Montserrat";
+    
+}
+.message {
+    min-height: 70px;
+    width: 325px;
+    background: #ECECEC;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    border: none;
+    color: #001E42;
+    outline: none;
+    padding-left: 20px;
+    font-family: "Montserrat";
+    padding-top: 10px;
+}
+
+.agree {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #A5AAAF;
+}
+.form-button {
+    width: 343px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #00FEFF;
+    color: #002047 ;
+    border: none;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+.form-img {
+    padding-left: 30px;
+}
