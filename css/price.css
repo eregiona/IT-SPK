@@ -1,4 +1,5 @@
 .price_container {
+    width: calc(100vw - 352px);
     max-width: 1090px;
     margin-left: 175px;
     margin-right: 177px;
@@ -13,20 +14,23 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    height: 321px;
-    width: 1090px;
+    width: calc(100vw - 352px);
+}
+.price-title {
+    width: calc(100vw - 352px);
 }
 .price-card_container {
-    width: 530px;
+    /* width: calc(100vw - 600px); */
     height: 321px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    /* margin-top: 20px; */
 }
 .price-description {
     width: 530px;
-    height: 290px;
+    /* height: 290px; */
     margin-top: 34px;
 }
 .price-text_container {
@@ -51,6 +55,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-right: 13px;
 }
 .price-card_style-1 {
     font-weight: normal;
@@ -93,6 +98,14 @@
     flex-direction: row;
     margin-top: 15px;
 }
+.download-after {
+    width: 399px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    display: none;    
+}
 .download-IT {
     font-weight: bold;
     font-size: 14px;
@@ -131,6 +144,7 @@
     justify-content: space-around;
     padding-left: 23px;
     background-color: #fff;
+    height: 50px;
 }
 .download-IT:hover {
     background-color:#F2F2F2;
@@ -138,100 +152,69 @@
 .download-mounting:hover {
     background-color:#F2F2F2;
 }
-@media (max-width:1411px) {
-    .price_container {
-        /* max-width: 700px;
-        display: flex; */
-        flex-direction: column;
-    }
-    /* .price-title {
-        width: auto;
-        height: 61px;
-    } */
-    /* .price-subcontainer {
-        max-width: 700px;
-        flex-direction: column;
-    } */
-}
-@media (max-width:1341px) {
-    .price-subcontainer {
-        max-width: 959px;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        min-height: 600px;
-        margin-right: 177px;
-        
-    }
+@media (max-width:1426px) {
     .price-description {
-        width: 100%;
+        width: calc(100vw - 352px);
     }
     .price-card_container {
-        margin-top: 30px;
-        margin-left: 200px;
+        margin-top: 20px;
+        justify-content: center;
+        width: calc(100vw - 352px);
     }
 }
-@media (max-width:1024px) {
-    .price-text_container {
-        width: 700px;
-    }
+@media (max-width:896px) {
     .price-card_container {
-        margin-top: 30px;
-        margin-left: 50px;
+        flex-direction: column;
     }
 }
-@media (max-width:768px) {
+@media (max-width: 875px) {
     .price_container {
+        width: calc(100vw - 13px);
         margin-left: 13px;
+    }
+    .price-text_container {
+        width: calc(100vw - 26px);
+    }
+    .price-title {
+        width: calc(100vw - 26px);
+    }
+    .price-card {
+        width: 345px;
+        margin-bottom: 16px;
     }
 }
 @media (max-width:426px) {
     .download {
         display: none;
     }
-    .price-subcontainer {
-        max-width: 340px;
-        min-height: 900px;
-    } 
     .price-text {
         font-size: 16px;
     }
-    .price-text_container {
-        width: 340px;
-    } 
     .price-card_container {
-        margin-top: 19px;
+        margin-top: 40px;
         margin-left: 0;
         flex-direction: column;
         flex-wrap: nowrap;
         min-height: 590px;
-        max-width: 343px;
-        
-    }
-    .price-description {
-        min-height: 275px;
+        width: calc(100vw - 26px);
     }
     .price-card {
         width: 345px;
-        height: 287px;
+        margin-bottom: 16px;
     }
-    .download  {
+    .download-after {
         display: contents;
+        display: flex;
+        width: calc(100vw - 30px);
+        height: 50px;
     }
-    
-}
-@media (max-width:321px) {
-    .price-subcontainer {
-        max-width: 290px;
-        min-height: 900px;
+    .download-IT {
+        margin-right: 15px;
+    }
+    .price-description {
+        width: calc(100vw - 30px);
     }
     .price-text_container {
-        width: 290px;
-    }
-    .price-card_container {
-        margin-top: 30px;
-        max-width: 290px;
-    }
-    .price-card {
-        width: 290px;
+        min-height: 250px;
     }
 }
