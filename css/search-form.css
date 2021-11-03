@@ -3,7 +3,8 @@
     width: calc(100vw - 352px); */
     background-image: url(../img/form.jpg);
     background-size: cover;
-    left: calc(50% - 1440px/2);
+    background-position: center;
+    /* left: calc(50% - 1440px/2); */
     /* height: 430px; */
     /* margin-left: 175px;
     margin-right: 177px; */
