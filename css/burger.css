@@ -18,6 +18,9 @@
     /* маргин как у бургера */
     margin-top: 37px; 
 }
+.burger_button {
+    margin-bottom: 20px;
+}
 /* При разрешении до 768px*/
 @media (max-width:875px) {
     /* БУРГЕРНЫЕ СТИЛИ */

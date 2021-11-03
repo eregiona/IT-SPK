@@ -30,6 +30,7 @@
 }
 .search-forms {
     width: 545px;
+    overflow: hidden;
 }
 .form  {
     width: 343px;
@@ -105,4 +106,48 @@
 }
 .form-img {
     padding-left: 30px;
+}
+@media (max-width: 1340px) {
+    .search-form_container {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1158px) {
+    .search-form-text {
+        font-size: 33px;
+        margin: 0;
+        margin-top: 63px;
+        padding-left: 35px;
+        height: 160px;
+    }
+    .search-forms {
+        width: calc(100vw - 352px);
+        justify-content: center;
+        display: flex;
+    }
+    .search-form_container {
+        justify-content: center;
+    }
+    .search-form_text-container {
+        margin: 0;
+        width: calc(100vw - 352px);
+        justify-content: center;
+        display: flex;
+
+    }
+}
+@media (max-width: 705px) {
+    .search-forms {
+        width: calc(100vw - 26px);
+    }
+    .search-form_text-container {
+        
+        width: calc(100vw - 26px);
+    }
+    .search-form-text {
+        padding: 0;
+    }    
+    .form {
+        margin-left: 0;
+    }
 }
