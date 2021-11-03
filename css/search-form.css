@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 .search-form_text-container {
-    width: calc(100vw - 895px);
+    width: auto;
     margin-left: 175px;
 }
 .search-form-text {
@@ -29,7 +29,7 @@
     margin-right: 113px;
 }
 .search-forms {
-    width: 545px;
+    width: auto;
     overflow: hidden;
 }
 .form  {

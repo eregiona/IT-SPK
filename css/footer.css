@@ -58,6 +58,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 /* Шрифт имени */
 .footer_phones_name {
