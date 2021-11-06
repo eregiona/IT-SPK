@@ -31,15 +31,15 @@
 
         <!-- logo -->
         <div class="logo">
-            <img class="logo__img" src="img/Group.svg" alt="Логоптип">
+            <a href="#"><img class="logo__img" src="img/Group.svg" alt="Логоптип"></a>
         </div>
         <!-- end logo -->
 
         <!-- start tools -->
         <ul class="tools">
-            <a href="http://yandex.ru" class="tools__link">О нас</a>
-            <a href="#" class="tools__link">Услуги</a>
-            <a href="#" class="tools__link">Цены</a>
+            <a data-goto=".about__tools-title" href="#about" class="tools__link">О нас</a>
+            <a data-goto=".services__tools-title" href="#services" class="tools__link">Услуги</a>
+            <a data-goto=".price__tools-title" href="#price" class="tools__link">Цены</a>
         </ul>
         <!-- end tools -->
 
@@ -65,9 +65,9 @@
                     <p class="burger-phones__number"> +380 93 541 20 92 &nbsp; <span class="burger-phones__name">lifecell</span> <br> <br> +380 99 311 29 79  &nbsp; <span class="burger-phones__name">Vodafone</span></p>
                 </div>
                 <div class="burger_tools">
-                    <li><a href="http://vk.com/olegs1mple" class="burger__link">О нас</a></li>
-                    <li><a href="##" class="burger__link">Услуги</a></li>
-                    <li><a href="##" class="burger__link">Цены</a></li>
+                    <li><a data-goto=".about__tools-title" href="#about"  class="burger__link">О нас</a></li>
+                    <li><a data-goto=".services__tools-title" href="#services" class="burger__link">Услуги</a></li>
+                    <li><a data-goto=".price__tools-title" href="#price" class="burger__link">Цены</a></li>
                 </div>
                 <div>
                     <button class="form-button_effective burger_button">Отправить заявку<img class="effective-img" src="img/Vector 1.svg" alt="Стрелка"></button>
@@ -104,7 +104,7 @@
         <!-- Контейнер о нас начало -->
         <section class="about">
             <div class="about_ONas">
-                <h2 id=" " class="tools-title">О нас</h2>
+                <a id="about"><h2 id=" " class="tools-title about__tools-title">О нас</h2></a>
             </div>
             <div class="about-description">
                 <p class="about-description-text">IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. &nbsp; Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.</p>
@@ -114,7 +114,7 @@
 
         <!-- Начало контейнера услуги -->
         <div class="services">
-            <h2 class="tools-title">Услуги</h2>
+            <a id="services"><h2 class="tools-title services__tools-title">Услуги</h2></a>
             <div class="services-blocks">
                 <div class="services-block">
                     <img src="img/icons/Group 70.svg" alt="компьютер" class="services-icon">
@@ -194,7 +194,7 @@
 
         <!-- Начало контейнера про цены -->
         <div class="price_container">
-            <div class="price-title"><h2 class="tools-title">Цены</h2></div>
+            <div class="price-title"><a id="price"><h2 class="tools-title price__tools-title">Цены</h2></a></div>
             <div class="price-subcontainer">
                 <div class="price-description">
                     <div class="price-text_container"><p class="price-text">У нас нет зарплаты или фиксированной суммы в месяц, все рассчеты базируются только на количестве компьютеров, которые мы берем на обслуживание и подключенных услугах. Платите только за что чем пользуетесь - <span class="price-text_special"> максимальная экономия и эффективность</span>. <br> <br> Оставьте заявку на обслуживание компьютеров и мы подготовим предложение специально для вас</p></div>
